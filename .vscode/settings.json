@@ -1,0 +1,10 @@
+{
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.snippet": ["css", "postcss", "scss"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit"
+  },
+  "cSpell.language": "ca,en"
+}

@@ -1,0 +1,66 @@
+{
+  "extends": "stylelint-config-recommended-scss",
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-declaration-block-no-ignored-properties",
+    "stylelint-no-indistinguishable-colors",
+    "@stylistic/stylelint-plugin"
+  ],
+  "rules": {
+    "declaration-no-important": true,
+    "selector-class-pattern": [
+      "^[a-z]([-]?[a-z0-9]+)*(__[a-z0-9]([-]?[a-z0-9]+)*)?(--[a-z0-9]([-]?[a-z0-9]+)*)?(\\@[a-z]*)?$",
+      {
+        "resolveNestedSelectors": true,
+        "message": "Expected class selector to match BEM CSS pattern: https://en.bem.info/methodology/css"
+      }
+    ],
+    "max-nesting-depth": [
+      3,
+      {
+        "ignoreAtRules": ["if", "else", "for", "each", "media", "supports", "include"]
+      }
+    ],
+    "declaration-block-single-line-max-declarations": 1,
+    "declaration-property-value-disallowed-list": {
+      "border": ["none"],
+      "border-top": ["none"],
+      "border-right": ["none"],
+      "border-bottom": ["none"],
+      "border-left": ["none"]
+    },
+
+    "@stylistic/selector-list-comma-newline-after": "always",
+    "@stylistic/block-opening-brace-space-before": "always",
+    "@stylistic/block-opening-brace-newline-after": "always-multi-line",
+    "@stylistic/block-closing-brace-newline-before": "always",
+    "@stylistic/declaration-block-trailing-semicolon": "always",
+    "@stylistic/declaration-colon-space-after": "always",
+    "@stylistic/declaration-block-semicolon-newline-after": "always",
+    "@stylistic/declaration-colon-space-before": "never",
+    "@stylistic/function-comma-space-before": "never",
+    "@stylistic/indentation": 2,
+    "@stylistic/max-empty-lines": 2,
+    "@stylistic/at-rule-name-case": "lower",
+    "@stylistic/color-hex-case": "lower",
+    "@stylistic/string-quotes": "double",
+    "@stylistic/value-list-comma-space-after": "always-single-line",
+    "@stylistic/function-comma-space-after": "always-single-line",
+    "@stylistic/number-no-trailing-zeros": true,
+
+    "scss/at-extend-no-missing-placeholder": true,
+    "scss/at-function-pattern": "^[a-z]+([a-z0-9-]+[a-z0-9]+)?$",
+    "scss/at-import-partial-extension-disallowed-list": ["scss"],
+    "scss/at-rule-no-unknown": true,
+    "scss/dollar-variable-colon-space-after": "always",
+    "scss/dollar-variable-colon-space-before": "never",
+    "scss/dollar-variable-pattern": "^[_]?[a-z]+([a-z0-9-]+[a-z0-9]+)?$",
+    "scss/load-no-partial-leading-underscore": true,
+    "scss/no-global-function-names": true,
+    "scss/percent-placeholder-pattern": "^[a-z]+([a-z0-9-]+[a-z0-9]+)?$",
+    "scss/selector-no-redundant-nesting-selector": true,
+
+    "plugin/declaration-block-no-ignored-properties": true,
+    "plugin/stylelint-no-indistinguishable-colors": true
+  }
+}

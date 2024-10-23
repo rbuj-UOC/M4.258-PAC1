@@ -1,31 +1,29 @@
-/**
- * Use this file to import partials.
- * Do not include SCSS code in this file.
- */
+// SETTINGS
+@import "settings/settings.global";
 
-/**
- * Import variables
- */
 
-@import "variables";
+// TOOLS
+@import "tools/tools.clearfix";
 
-/**
- * Import npm dependencies
- * see: https://v2.parceljs.org/features/module-resolution/
- * see commented examples below
- */
 
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
-@import "npm:@fortawesome/fontawesome-free/css/all.css";
+// GENERIC
+@import "generic/generic.box-sizing";
+@import "generic/generic.normalize";
 
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
 
-@import "layouts/home";
+// ELEMENTS
+@import "elements/elements.page";
 
-/**
- * Do NOT include anything else in this file!
- */
+
+// OBJECTS
+
+
+// COMPONENTS
+@import "components/components.container";
+@import "components/components.footer";
+@import "components/components.logo";
+@import "components/components.title";
+
+
+// UTILITIES
+@import "utilities/utilities.clearfix";
