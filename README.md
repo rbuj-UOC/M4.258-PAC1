@@ -6,7 +6,7 @@ This is the 3.x version of UOC Boilerplate, available since the UOC 2020-2 semes
 
 ## Requirements
 
-[Node.js](http://nodejs.org/) >= 18.x
+[Node.js](http://nodejs.org/) >= 20.x
 
 ## Getting started
 
