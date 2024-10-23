@@ -6,5 +6,16 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": "explicit"
   },
-  "cSpell.language": "ca,en"
+  "cSpell.language": "ca,en",
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript", // ...
+    "html" // Add "html" to enable linting `.html` files.
+  ],
+  "prettier.documentSelectors": [
+    "**/*.html"
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

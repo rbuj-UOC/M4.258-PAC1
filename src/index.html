@@ -1,20 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html>
+<html lang="ca">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="npm:@fortawesome/fontawesome-free/css/all.css">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" href="npm:@fortawesome/fontawesome-free/css/all.css">
+    <!-- do not remove the line below ! -->
+    <link rel="stylesheet" href="./assets/styles/main.scss">
     <title>UOC Boilerplate</title>
   </head>
   <body>
     <div class="c-container">
       <picture>
-        <source srcset="./assets/images/logo.png?as=avif&width=350" type="image/avif" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="c-logo" />
+        <source srcset="./assets/images/logo.png?as=avif&width=350" type="image/avif">
+        <img
+          src="./assets/images/logo.png?width=350"
+          alt="Universitat Oberta de Catalunya"
+          class="c-logo">
       </picture>
-      <h1 class="c-title">Hello, UOC! <i class="fas fa-university"></i></h1>
+      <h1 class="c-title">
+        Hello, UOC!
+        <i class="fas fa-university"></i>
+      </h1>
       <p>
         This is a starter template for the Advanced HTML and CSS Tools courses
         from the Master's Program in Multimedia Applications and the Master's
@@ -23,6 +30,7 @@
       </p>
     </div>
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <!-- do not remove the line below ! -->
+    <script type="module" src="./assets/scripts/main.js"></script>
   </body>
 </html>

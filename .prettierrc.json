@@ -1,0 +1,10 @@
+{
+  "trailingComma": "none",
+  "printWidth": 80,
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": false,
+  "htmlWhitespaceSensitivity": "ignore",
+  "bracketSameLine": true,
+  "plugins": ["@awmottaz/prettier-plugin-void-html"]
+}
