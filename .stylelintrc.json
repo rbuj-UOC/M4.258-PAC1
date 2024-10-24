@@ -58,7 +58,6 @@
     "scss/load-no-partial-leading-underscore": true,
     "scss/no-global-function-names": true,
     "scss/percent-placeholder-pattern": "^[a-z]+([a-z0-9-]+[a-z0-9]+)?$",
-    "scss/selector-no-redundant-nesting-selector": true,
 
     "plugin/declaration-block-no-ignored-properties": true,
     "plugin/stylelint-no-indistinguishable-colors": true

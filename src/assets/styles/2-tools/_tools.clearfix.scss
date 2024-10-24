@@ -8,11 +8,10 @@
 //   @include inuit-clearfix();
 // }
 
-@mixin inuit-clearfix() {
+@mixin clearfix() {
   &:after {
     content: "";
     display: block;
     clear: both;
   }
-
 }

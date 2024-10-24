@@ -23,13 +23,7 @@ export default [
     rules: {
       ...html.configs["flat/recommended"].rules,
       "@html-eslint/indent": ["error", 2],
-      "@html-eslint/no-script-style-type": "error",
-      "@html-eslint/attrs-newline": [
-        "error",
-        {
-          closeStyle: "sameline"
-        }
-      ]
+      "@html-eslint/no-script-style-type": "error"
     }
   }
 ];

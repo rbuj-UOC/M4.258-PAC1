@@ -1,29 +1,37 @@
 // SETTINGS
-@import "settings/settings.global";
+@import "1-settings/settings.global";
 
 
 // TOOLS
-@import "tools/tools.clearfix";
+@import "2-tools/tools.clearfix";
 
 
 // GENERIC
-@import "generic/generic.box-sizing";
-@import "generic/generic.normalize";
+@import "3-generic/generic.box-sizing";
+@import "3-generic/generic.normalize";
 
 
 // ELEMENTS
-@import "elements/elements.page";
+@import "4-elements/elements.a";
+@import "4-elements/elements.body";
+@import "4-elements/elements.h";
+@import "4-elements/elements.li";
+@import "4-elements/elements.p";
+@import "4-elements/elements.table";
+@import "4-elements/elements.td";
+@import "4-elements/elements.th";
 
 
 // OBJECTS
+@import "5-objects/objects.list-star";
 
 
 // COMPONENTS
-@import "components/components.container";
-@import "components/components.footer";
-@import "components/components.logo";
-@import "components/components.title";
+@import "6-components/components.content";
+@import "6-components/components.footer";
+@import "6-components/components.navigation";
+@import "6-components/components.picture";
 
 
 // UTILITIES
-@import "utilities/utilities.clearfix";
+@import "7-utilities/utilities.clearfix";

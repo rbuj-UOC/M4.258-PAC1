@@ -1,34 +1,372 @@
+<!-- eslint-disable @html-eslint/element-newline -->
+<!-- eslint-disable @html-eslint/attrs-newline -->
 <!doctype html>
 
 <html lang="ca">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="npm:@fortawesome/fontawesome-free/css/all.css">
     <!-- do not remove the line below ! -->
     <link rel="stylesheet" href="./assets/styles/main.scss">
-    <title>UOC Boilerplate</title>
+    <title>Comarca del Segrià</title>
   </head>
+
   <body>
-    <div class="c-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=avif&width=350" type="image/avif">
-        <img
-          src="./assets/images/logo.png?width=350"
-          alt="Universitat Oberta de Catalunya"
-          class="c-logo">
-      </picture>
-      <h1 class="c-title">
-        Hello, UOC!
-        <i class="fas fa-university"></i>
-      </h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <include src="./views/header.html"></include>
+
+    <main class="c-content">
+      <section class="c-content__section" id="toponimia">
+        <h2>
+          <i class="fa-solid fa-map-location-dot"></i>
+          Toponímia
+        </h2>
+        <picture class="c-picture--left">
+          <source
+            srcset="./assets/images/Bandera_del_Segria.svg?as=avif&width=350"
+            type="image/avif">
+          <img
+            src="./assets/images/Bandera_del_Segria.svg?width=350"
+            alt="La Universitat de Lleida"
+            class="c-picture__img">
+        </picture>
+        <p>
+          El nom de la comarca no prové del riu Segre com es pot pensar, sinó
+          que ho fa de la clamor de Segrià, nom d'un reguer documentat al segle
+          xii a l'Ordinatio Ecclesiae Ilerdensis, promulgada el 1168 pel bisbe
+          Guillem Pere de Ravidats i on establia la divisió eclesiàstica
+          coneguda com la Prepositòria de Segrià. Aquesta clamor es forma amb
+          barrancs de pluja, entre els termes d'Alguaire i la Portella, i
+          discorre per Vilanova de Segrià i Benavent, on desguassa al Segre. És,
+          per tant, un petit afluent del Segre, el nom del qual prové del llatí
+          Sicoris.
+        </p>
+      </section>
+
+      <section class="c-content__section u-clearfix" id="geografia">
+        <h2>
+          <i class="fa-regular fa-compass"></i>
+          Geografia
+        </h2>
+        <picture class="c-picture--left">
+          <source
+            srcset="./assets/images/Canal_de_Seros_2.jpeg?as=avif&width=350"
+            type="image/avif">
+          <img
+            src="./assets/images/Canal_de_Seros_2.jpeg?width=350"
+            alt="El riu Segre a Lleida, amb el partidor que dona inici al Canal de Seròs"
+            class="c-picture__img">
+        </picture>
+        <p>
+          El Segrià estricte i nucli central de la comarca és el territori
+          inclòs entre la zona nord de la ciutat de Lleida i els límits del
+          terme d'Alguaire, i entre el
+          <a
+            href="https://ca.wikipedia.org/wiki/Noguerola_(riu)"
+            target="_blank"
+            rel="noopener noreferrer">
+            Noguerola
+          </a>
+          i la Noguera
+          <a
+            href="https://ca.wikipedia.org/wiki/Noguera_Ribagor%C3%A7ana"
+            target="_blank"
+            rel="noopener noreferrer">
+            Ribagorçana
+          </a>
+          .
+        </p>
+        <p>
+          El sector central és constituït per les planes al·luvials del
+          <a
+            href="https://ca.wikipedia.org/wiki/Segre"
+            target="_blank"
+            rel="noopener noreferrer">
+            Segre
+          </a>
+          . El Segre travessa la comarca de nord-est a sud-oest i ha format una
+          ampla plana al seu entorn. Topogràficament és una continuació del pla
+          d'
+          <a
+            href="https://ca.wikipedia.org/wiki/Urgell"
+            target="_blank"
+            rel="noopener noreferrer">
+            Urgell
+          </a>
+          , nom que està pres per a designar una nova comarca centrada a
+          <a
+            href="https://ca.wikipedia.org/wiki/Mollerussa"
+            target="_blank"
+            rel="noopener noreferrer">
+            Mollerussa
+          </a>
+          . La plana de l'entorn del Segre és coneguda com el
+          <a
+            href="https://ca.wikipedia.org/wiki/Pla_de_Lleida"
+            target="_blank"
+            rel="noopener noreferrer">
+            pla de Lleida
+          </a>
+          .
+        </p>
+        <p>
+          El pla de Lleida només és una part del Segrià actual. La plana del
+          Segre que continua cap al nord ja és dins la comarca de la Noguera.
+          Cap al sud la plana s'estreny, fins a ser només una plana estreta i
+          allargassada al llarg de les ribes del riu. Els tossals i serrats són
+          molt propers al curs del riu. A l'extrem sud-oest hi ha l'aiguabarreig
+          del Segre amb el
+          <a
+            href="https://ca.wikipedia.org/wiki/Cinca"
+            target="_blank"
+            rel="noopener noreferrer">
+            Cinca
+          </a>
+          , en el límit amb
+          <a
+            href="https://ca.wikipedia.org/wiki/Arag%C3%B3"
+            target="_blank"
+            rel="noopener noreferrer">
+            Aragó
+          </a>
+          . Aquest sector és conegut com el
+          <a
+            href="https://ca.wikipedia.org/wiki/Baix_Segre"
+            target="_blank"
+            rel="noopener noreferrer">
+            Baix Segre
+          </a>
+          .
+        </p>
+        <p>
+          Cap al nord-est, entre els rius Segre, Noguera Ribagorçana i Cinca, hi
+          ha un territori planer amb turons baixos i serres d'escassa altitud.
+          Ja no és la plana al·luvial que han format aquests rius, sinó un
+          sector una mica enlairat que els petits cursos i torrents hi han
+          excavat barrancs i petites valls de fons pla. Entre aquestes petites
+          valls hi ha tossals i turons que testimonien antics nivells dels
+          materials sedimentaris. El nom de Segrià era aplicat originàriament a
+          aquest territori.
+        </p>
+        <p>
+          Un relleu semblant es troba al cantó sud-est, en el límit amb les
+          Garrigues i la Ribera d'Ebre. El territori és constituït per nombrosos
+          tossals i serres d'escassa altitud, entre les quals hi ha rius i
+          torrents que van gairebé sempre secs. Aquest sector recorda molt el
+          paisatge de les Garrigues. De fet n'és la continuació i alguns
+          l'anomenen Segrià garriguenc. Cap al sud el relleu es fa més abrupte,
+          a causa de la proximitat de l'
+          <a
+            href="https://ca.wikipedia.org/wiki/Ebre"
+            target="_blank"
+            rel="noopener noreferrer">
+            Ebre
+          </a>
+          .
+        </p>
+        <p>
+          El Segrià és doncs, una comarca constituïda per una
+          <a
+            href="https://ca.wikipedia.org/wiki/Plana_al%C2%B7luvial"
+            target="_blank"
+            rel="noopener noreferrer">
+            plana al·luvial
+          </a>
+          i per sectors de tossals que la voregen.
+        </p>
+        <p>
+          El Segrià aprovat en la divisió comarcal de 1932 i 1936, i que inicial
+          ment establí la Generalitat el 1987, comprenia també un sector del pla
+          d'Urgell. Amb la creació, el 1988, de la nova comarca del Pla
+          d'Urgell, set municipis de l'antiga comarca del Segrià foren inclosos
+          a la nova comarca. Bell-lloc d'Urgell, Fondarella, Golmés, Miralcamp,
+          Mollerussa, Palau d'Anglesola i Sidamon passaren a formar part del Pla
+          d'Urgell. Amb aquesta segregació el Segrià perdé un dels territoris
+          més actius demogràficament i econòmica dels darrers anys.
+        </p>
+        <p>
+          La llei de modificació de la divisió comarcal de Catalunya de gener de
+          1990 modificà de nou el Segrià amb l'agregació dels municipis
+          d'Alfarràs i la Portella, fins aleshores pertanyents a la Noguera.
+        </p>
+        <p>
+          El Segrià actual té una superfície de 1.396,65 km² i una població de
+          209.768 h. És la comarca globalment més poblada i més activa
+          econòmicament de la meitat occidental de Catalunya. Els diferents
+          paisatges naturals han condicionat diferències destacades en el
+          desenvolupament econòmic de la comarca. El centre econòmic és sens
+          dubte la ciutat de Lleida, ciutat que té una influència comercial i de
+          serveis molt més enllà del Segrià, fins i tot en les terres aragoneses
+          més properes.
+        </p>
+        <p>
+          L'agricultura ha estat la base de l'economia del Segrià. El regadiu,
+          ja antic en les planes baixes del Segre, ha estat el factor principal
+          en el creixement econòmic del darrer segle. Al costat de l'agricultura
+          ha crescut una ramaderia molt tecnificada, que s'ha estès per totes
+          les sis comarques de ponent. Però a Lleida també hi ha una activitat
+          industrial notable. A més, Lleida s'ha convertit en el centre de
+          serveis i cultural més important de les terres de ponent.
+        </p>
+      </section>
+
+      <section class="c-content__section u-clearfix" id="relleu">
+        <h2 class="u-clearfix">
+          <i class="fa-solid fa-mountain-sun"></i>
+          Relleu
+        </h2>
+        <picture class="c-picture--right">
+          <source
+            srcset="./assets/images/Lleida-Udl5.jpg?as=avif&width=350"
+            type="image/avif">
+          <img
+            src="./assets/images/Lleida-Udl5.jpg?width=350"
+            alt="La Universitat de Lleida"
+            class="c-picture__img">
+        </picture>
+        <p>
+          Per entendre el relleu del Segrià cal tenir present la història dels
+          darrers milions d'anys. Per al relleu són pocs anys. Imagineu-vos el
+          fons de la Depressió Central. És una gran plana, formada pels
+          materials que s'han sedimentat al fons del mar o al llac que hi havia.
+          Sobre aquestes roques s'hi han dipositat els materials que han anat
+          descendint de les muntanyes veïnes, arrossegats per les aigües
+          torrencials.
+        </p>
+        <p>
+          Tot plegat formà un relleu planer, que amb el temps es deformà una
+          mica, a causa de les formes de l'interior de la terra. Aquestes
+          deformacions es veuen bé a les Garrigues i a la Segarra. Però al Pla
+          d'Urgell i al Segrià hi ha hagut dos fenòmens que han fet que encara
+          ara tinguem un relleu molt pla. El primer fou els materials que anaven
+          baixant pels vessants des de les muntanyes veïnes més elevades,
+          arrossegats per les aigües salvatges. El segon fou els rius,
+          concretament el Segre, que encara que obrí valls, aquestes han anat
+          reomplint-se amb els materials que el mateix riu ha transportat.
+        </p>
+        <p>
+          El resultat és l'existència d'una vall al·luvial ampla, plana i amb
+          materials poc consolidats, sobre els quals s'han format sòls fèrtils.
+          Entorn de la plana al·luvial hi ha la plana modelada amb els materials
+          que baixaren torrencialment, i les restes de materials que es
+          dipositaren al fons de l'antiga conca de la Depressió Central.
+        </p>
+        <p>
+          Aquests darrers es veuen molt bé en els sectors nord-oest i sud-est
+          del Segrià. La duresa i resistència diferents dels materials han fet
+          que s'hagin format turons i tossals. Les capes dures al cim dels
+          tossals són testimoni de fins on arribava el nivell dels materials
+          antics. Per això sovint són anomenats turons testimoni.
+        </p>
+        <p>
+          Alguns són ben espectaculars, sobretot quan hi ha diverses capes dures
+          i els materials tenen colors diferents. L'escassetat de vegetació a
+          causa del clima fa que molts d'aquests tossals estiguin totalment
+          sense vegetació, el que facilita l'observació dels diferents tipus de
+          materials. Un dels més espectaculars i bonics és el Montmeneu (494 m),
+          al sud de la comarca, a prop de l'aiguabarreig del Segre i l'Ebre.
+        </p>
+      </section>
+
+      <section class="c-content__section" id="inici" data-default="true">
+        <h2>
+          <i class="fa-solid fa-house"></i>
+          Inici
+        </h2>
+        <picture class="c-picture--right">
+          <source
+            srcset="./assets/images/Segria_a_Catalunya.svg?as=avif&width=350"
+            type="image/avif">
+          <img
+            src="./assets/images/Segria_a_Catalunya.svg?width=350"
+            alt="La Universitat de Lleida"
+            class="c-picture__img">
+        </picture>
+        <p class="u-clearfix">
+          El Segrià és una comarca de Catalunya, la seva capital és Lleida. És
+          la setena comarca més poblada de Catalunya. Limita al nord amb la
+          Noguera, a l'est amb el Pla d'Urgell i les Garrigues, al sud amb la
+          Ribera d'Ebre, i a l'oest amb el Baix Cinca i el Matarranya.
+        </p>
+
+        <h3>
+          <i class="fa-solid fa-signs-post"></i>
+          Resum
+        </h3>
+        <table>
+          <tr>
+            <td>Gentilici</td>
+            <td>segrianenc, segrianenca</td>
+          </tr>
+          <tr>
+            <td>Població</td>
+            <td>209.818 (2019) (150,22 hab./km²)</td>
+          </tr>
+          <tr>
+            <td>Població</td>
+            <td>209.818 (2019) (150,22 hab./km²)</td>
+          </tr>
+          <tr>
+            <td>Limita amb</td>
+            <td>
+              <ul class="o-list-star">
+                <li>Noguera</li>
+                <li>Llitera</li>
+                <li>Baix Cinca</li>
+                <li>Ribera d'Ebre</li>
+                <li>Pla d'Urgell</li>
+                <li>Garrigues</li>
+                <li>Baix Aragó - Casp</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+
+        <h3>
+          <i class="fa-solid fa-circle-info"></i>
+          Vegeu també
+        </h3>
+        <ul class="fa-ul">
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-bookmark"></i></span>
+            <a
+              href="https://ca.wikipedia.org/wiki/Llista_de_banderes_municipals_del_Segri%C3%A0"
+              target="_blank"
+              rel="noopener noreferrer">
+              Llista de banderes municipals del Segrià
+            </a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-bookmark"></i></span>
+            <a
+              href="https://ca.wikipedia.org/wiki/Arxiu_Hist%C3%B2ric_de_Lleida"
+              target="_blank"
+              rel="noopener noreferrer">
+              Arxiu Històric de Lleida
+            </a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-bookmark"></i></span>
+            <a
+              href="https://ca.wikipedia.org/wiki/Llista_de_monuments_del_Segri%C3%A0"
+              target="_blank"
+              rel="noopener noreferrer">
+              Llista de monuments del Segrià
+            </a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-bookmark"></i></span>
+            <a
+              href="https://ca.wikipedia.org/wiki/Serra_de_la_Pleta"
+              target="_blank"
+              rel="noopener noreferrer">
+              Serra de la Pleta
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
     <include src="./views/footer.html"></include>
     <!-- do not remove the line below ! -->
     <script type="module" src="./assets/scripts/main.js"></script>
