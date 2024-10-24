@@ -22,8 +22,27 @@ export default [
     },
     rules: {
       ...html.configs["flat/recommended"].rules,
+      "@html-eslint/attrs-newline": ["error", { "closeStyle": "sameline" }],
+      "@html-eslint/require-meta-charset": "error",
+      "@html-eslint/element-newline": ["error", {skip: ["pre", "code"]}],
+      "@html-eslint/id-naming-convention": ["error", "kebab-case"],
       "@html-eslint/indent": ["error", 2],
-      "@html-eslint/no-script-style-type": "error"
+      "@html-eslint/lowercase": "error",
+      "@html-eslint/no-duplicate-attrs": "error",
+      "@html-eslint/no-inline-styles": "error",
+      "@html-eslint/no-multiple-empty-lines": ["error", {"max": 2}],
+      "@html-eslint/no-multiple-h1": "error",
+      "@html-eslint/no-obsolete-tags": "error",
+      "@html-eslint/no-skip-heading-levels": "error",
+      "@html-eslint/no-script-style-type": "error",
+      "@html-eslint/no-trailing-spaces": "error",
+      "@html-eslint/quotes": ["error", "double"],
+      "@html-eslint/require-img-alt": "error",
+      "@html-eslint/require-lang": "error",
+      "@html-eslint/require-li-container": "error",
+      "@html-eslint/require-meta-description": "error",
+      "@html-eslint/require-meta-viewport": "error",
+      "@html-eslint/require-title": "error"
     }
   }
 ];
