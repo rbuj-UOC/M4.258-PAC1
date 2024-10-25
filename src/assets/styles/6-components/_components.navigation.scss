@@ -1,4 +1,5 @@
 @use "../1-settings/settings.global" as style-settings-global;
+@use "../../../../node_modules/sass-mq/mq" as *;
 
 .c-navigation {
   box-sizing: border-box;
@@ -14,7 +15,7 @@
     padding: 16px;
     list-style: none;
 
-    @media (min-width: style-settings-global.$mq-mobile-min-width) {
+    @include mq($from: mobile) {
       display: flex;
     }
   }
@@ -27,13 +28,13 @@
     padding: 8px;
     font-size: 1em;
 
-    @media (min-width: style-settings-global.$mq-mobile-min-width) {
+    @include mq($from: mobile) {
       margin: 0 12px;
       padding: 8px;
       font-size: 1em;
     }
 
-    @media (min-width: style-settings-global.$mq-tablet-min-width) {
+    @include mq($from: tablet) {
       margin: 0 24px;
       padding: 8px;
       font-size: 1.5em;

@@ -1,4 +1,5 @@
 @use "../1-settings/settings.global" as style-settings-global;
+@use "../../../../node_modules/sass-mq/mq" as *;
 
 .c-content {
   margin-left: 16px;
@@ -6,25 +7,25 @@
   max-width: auto;
   position: relative;
 
-  @media (min-width: style-settings-global.$mq-mobile-min-width) {
+  @include mq($from: mobile) {
     margin-left: 32px;
     margin-right: 32px;
     max-width: auto;
   }
 
-  @media (min-width: style-settings-global.$mq-tablet-min-width) {
+  @include mq($from: tablet) {
     margin-left: auto;
     margin-right: auto;
     width: 840px;
   }
 
-  @media (min-width: style-settings-global.$mq-laptop-min-width) {
+  @include mq($from: desktop) {
     margin-left: 200px;
     margin-right: 200px;
     max-width: auto;
   }
 
-  @media (min-width: style-settings-global.$mq-desktop-min-width) {
+  @include mq($from: wide) {
     margin-left: auto;
     margin-right: auto;
     max-width: 1040px;

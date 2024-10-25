@@ -1,0 +1,5 @@
+@use "../1-settings/settings.global" as style-settings-global;
+@use "../../../../node_modules/sass-mq/mq" with (
+  $breakpoints: style-settings-global.$breakpoints,
+  $show-breakpoints: style-settings-global.$show-breakpoints
+);

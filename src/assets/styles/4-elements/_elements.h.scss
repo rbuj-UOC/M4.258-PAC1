@@ -1,4 +1,5 @@
 @use "../1-settings/settings.global" as style-settings-global;
+@use "../../../../node_modules/sass-mq/mq" as *;
 
 h1,
 h2,
@@ -7,7 +8,7 @@ h3 {
   color: style-settings-global.$color-quaternary;
   text-align: center;
 
-  @media (min-width: style-settings-global.$mq-mobile-min-width) {
+  @include mq($from: mobile) {
     text-align: left;
   }
 }
@@ -16,7 +17,7 @@ h2 {
   font-size: 24px;
   font-weight: 700;
 
-  @media (min-width: style-settings-global.$mq-mobile-min-width) {
+  @include mq($from: mobile) {
     font-size: 36px;
   }
 }
@@ -25,7 +26,7 @@ h3 {
   font-size: 16px;
   font-weight: 700;
 
-  @media (min-width: style-settings-global.$mq-mobile-min-width) {
+  @include mq($from: mobile) {
     font-size: 24px;
   }
 }
