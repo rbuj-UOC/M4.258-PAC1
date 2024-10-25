@@ -1,9 +1,11 @@
+@use "../1-settings/settings.global" as style-settings-global;
+
 a {
-  color: $color-primary;
+  color: style-settings-global.$color-primary;
   text-decoration: none;
   font-weight: 500;
 }
 
 a:hover {
-  color: $color-ternary;
+  color: style-settings-global.$color-ternary;
 }

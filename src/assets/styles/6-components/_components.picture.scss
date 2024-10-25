@@ -1,16 +1,18 @@
+@use "../1-settings/settings.global" as style-settings-global;
+
 .c-picture {
   &__img {
     width: 100%;
     overflow-clip-margin: content-box;
     overflow: clip;
 
-    @media (min-width: $mq-mobile-min-width) {
+    @media (min-width: style-settings-global.$mq-mobile-min-width) {
       width: 350px;
     }
   }
 
   &--right {
-    @media (min-width: $mq-mobile-min-width) {
+    @media (min-width: style-settings-global.$mq-mobile-min-width) {
       float: right;
       padding-left: 16px;
       margin-right: 12px;
@@ -18,7 +20,7 @@
   }
 
   &--left {
-    @media (min-width: $mq-mobile-min-width) {
+    @media (min-width: style-settings-global.$mq-mobile-min-width) {
       float: left;
       padding-right: 16px;
       margin-left: 12px;

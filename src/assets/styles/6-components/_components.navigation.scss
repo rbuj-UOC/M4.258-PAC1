@@ -1,7 +1,9 @@
+@use "../1-settings/settings.global" as style-settings-global;
+
 .c-navigation {
   box-sizing: border-box;
   width: 100%;
-  background: $color-quaternary;
+  background: style-settings-global.$color-quaternary;
   box-shadow: 0 0 5px 0 rgba(black, .5);
 
   &__list {
@@ -12,7 +14,7 @@
     padding: 16px;
     list-style: none;
 
-    @media (min-width: $mq-mobile-min-width) {
+    @media (min-width: style-settings-global.$mq-mobile-min-width) {
       display: flex;
     }
   }
@@ -25,13 +27,13 @@
     padding: 8px;
     font-size: 1em;
 
-    @media (min-width: $mq-mobile-min-width) {
+    @media (min-width: style-settings-global.$mq-mobile-min-width) {
       margin: 0 12px;
       padding: 8px;
       font-size: 1em;
     }
 
-    @media (min-width: $mq-tablet-min-width) {
+    @media (min-width: style-settings-global.$mq-tablet-min-width) {
       margin: 0 24px;
       padding: 8px;
       font-size: 1.5em;

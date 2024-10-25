@@ -1,37 +1,37 @@
 // SETTINGS
-@import "1-settings/settings.global";
+@use "1-settings/settings.global" as style-settings-global;
 
 
 // TOOLS
-@import "2-tools/tools.clearfix";
+@use "2-tools/tools.clearfix" as style-tools-clearfix;
 
 
 // GENERIC
-@import "3-generic/generic.box-sizing";
-@import "3-generic/generic.normalize";
+@use "3-generic/generic.box-sizing" as style-generic-box-sizing;
+@use "3-generic/generic.normalize" as style-generic-normalize;
 
 
 // ELEMENTS
-@import "4-elements/elements.a";
-@import "4-elements/elements.body";
-@import "4-elements/elements.h";
-@import "4-elements/elements.li";
-@import "4-elements/elements.p";
-@import "4-elements/elements.table";
-@import "4-elements/elements.td";
-@import "4-elements/elements.th";
+@use "4-elements/elements.a" as style-elements-a;
+@use "4-elements/elements.body" as style-elements-body;
+@use "4-elements/elements.h" as style-elements-h;
+@use "4-elements/elements.li" as style-elements-li;
+@use "4-elements/elements.p" as style-elements-p;
+@use "4-elements/elements.table" as style-elements-table;
+@use "4-elements/elements.td" as style-elements-td;
+@use "4-elements/elements.th" as style-elements-th;
 
 
 // OBJECTS
-@import "5-objects/objects.list-star";
+@use "5-objects/objects.list-star" as style-XXX-list-star;
 
 
 // COMPONENTS
-@import "6-components/components.content";
-@import "6-components/components.footer";
-@import "6-components/components.navigation";
-@import "6-components/components.picture";
+@use "6-components/components.content" as style-components-content;
+@use "6-components/components.footer" as style-components-footer;
+@use "6-components/components.navigation" as style-components-navigation;
+@use "6-components/components.picture" as style-components-picture;
 
 
 // UTILITIES
-@import "7-utilities/utilities.clearfix";
+@use "7-utilities/utilities.clearfix" as style-utilities-clearfix;

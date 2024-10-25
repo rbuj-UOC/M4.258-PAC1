@@ -1,28 +1,30 @@
+@use "../1-settings/settings.global" as style-settings-global;
+
 .c-content {
   margin-left: 16px;
   margin-right: 16px;
   max-width: auto;
   position: relative;
 
-  @media (min-width: $mq-mobile-min-width) {
+  @media (min-width: style-settings-global.$mq-mobile-min-width) {
     margin-left: 32px;
     margin-right: 32px;
     max-width: auto;
   }
 
-  @media (min-width: $mq-tablet-min-width) {
+  @media (min-width: style-settings-global.$mq-tablet-min-width) {
     margin-left: auto;
     margin-right: auto;
     width: 840px;
   }
 
-  @media (min-width: $mq-laptop-min-width) {
+  @media (min-width: style-settings-global.$mq-laptop-min-width) {
     margin-left: 200px;
     margin-right: 200px;
     max-width: auto;
   }
 
-  @media (min-width: $mq-desktop-min-width) {
+  @media (min-width: style-settings-global.$mq-desktop-min-width) {
     margin-left: auto;
     margin-right: auto;
     max-width: 1040px;

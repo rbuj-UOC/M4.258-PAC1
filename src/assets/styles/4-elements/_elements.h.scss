@@ -1,11 +1,13 @@
+@use "../1-settings/settings.global" as style-settings-global;
+
 h1,
 h2,
 h3 {
-  font-family: $font-family-serif;
-  color: $color-quaternary;
+  font-family: style-settings-global.$font-family-serif;
+  color: style-settings-global.$color-quaternary;
   text-align: center;
 
-  @media (min-width: $mq-mobile-min-width) {
+  @media (min-width: style-settings-global.$mq-mobile-min-width) {
     text-align: left;
   }
 }
@@ -14,7 +16,7 @@ h2 {
   font-size: 24px;
   font-weight: 700;
 
-  @media (min-width: $mq-mobile-min-width) {
+  @media (min-width: style-settings-global.$mq-mobile-min-width) {
     font-size: 36px;
   }
 }
@@ -23,7 +25,7 @@ h3 {
   font-size: 16px;
   font-weight: 700;
 
-  @media (min-width: $mq-mobile-min-width) {
+  @media (min-width: style-settings-global.$mq-mobile-min-width) {
     font-size: 24px;
   }
 }

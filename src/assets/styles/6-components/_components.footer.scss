@@ -1,3 +1,5 @@
+@use "../1-settings/settings.global" as style-settings-global;
+
 .c-footer {
   position: fixed;
   bottom: 0;
@@ -6,6 +8,6 @@
   width: 100%;
   font-size: 0.75rem;
   text-align: center;
-  background-color: $color-quaternary;
-  color: $color-secondary;
+  background-color: style-settings-global.$color-quaternary;
+  color: style-settings-global.$color-secondary;
 }
