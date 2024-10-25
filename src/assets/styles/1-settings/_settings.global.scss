@@ -9,7 +9,7 @@ $color-primary: #9b111e;
 $color-secondary: #fff1db;
 $color-ternary: #d4bdac;
 $color-quaternary: #536493;
-$site-bg: color.scale($color-ternary, $lightness: 70%);
+$site-bg: color.scale($color-ternary, $lightness: 90%);
 $site-color: color.scale($color-ternary, $blackness: 90%);
 
 $breakpoints: (
