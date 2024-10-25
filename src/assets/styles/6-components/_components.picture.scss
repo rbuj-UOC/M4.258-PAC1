@@ -1,30 +1,26 @@
 @use "../1-settings/settings.global" as style-settings-global;
 @use "../../../../node_modules/sass-mq/mq" as *;
 
-.c-picture {
-  &__img {
-    width: 100%;
-    overflow-clip-margin: content-box;
-    overflow: clip;
+.c-picture__img {
+  width: 100%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 
-    @include mq($from: mobile) {
-      width: 350px;
-    }
+  @include mq($from: mobile) {
+    width: 350px;
   }
+}
 
-  &--right {
-    @include mq($from: mobile) {
-      float: right;
-      padding-left: 16px;
-      margin-right: 12px;
-    }
+.c-picture--right {
+  @include mq($from: mobile) {
+    float: right;
+    padding-left: 16px;
   }
+}
 
-  &--left {
-    @include mq($from: mobile) {
-      float: left;
-      padding-right: 16px;
-      margin-left: 12px;
-    }
+.c-picture--left {
+  @include mq($from: mobile) {
+    float: left;
+    padding-right: 16px;
   }
 }
