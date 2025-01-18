@@ -9,6 +9,9 @@
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
     "build": "npm-run-all clean parcel:build",
+    "stylelint": "stylelint src/**/*.scss",
+    "eslint": "eslint src/**/*.html",
+    "prepare": "husky",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
   "targets": {
@@ -47,6 +50,8 @@
     "eslint-plugin-html": "^8.1.2",
     "eslint-plugin-prettier": "^5.2.2",
     "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.1",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.13.3",
     "postcss-preset-env": "^10.1.3",

@@ -23,3 +23,5 @@ npm install --save-dev \
   @html-eslint/parser \
   @html-eslint/eslint-plugin \
   eslint-plugin-html
+
+npm i -D husky lint-staged
