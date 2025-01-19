@@ -25,3 +25,4 @@ npm install --save-dev \
   eslint-plugin-html
 
 npm i -D husky lint-staged
+npm i -D gh-pages
