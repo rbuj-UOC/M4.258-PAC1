@@ -3,6 +3,8 @@ npm install --save @fortawesome/fontawesome-free
 npm install --save normalize-scss
 npm install --save sass-mq
 
+npm install --save-dev parcel-reporter-static-files-copy
+
 npm install --save-dev \
   stylelint\
   stylelint-scss \
