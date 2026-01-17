@@ -1,5 +1,4 @@
 [![Node.js CI](https://github.com/rbuj-UOC/M4.258-PAC1/actions/workflows/node.js.yml/badge.svg)](https://github.com/rbuj-UOC/M4.258-PAC1/actions/workflows/node.js.yml)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5d1485a8-b6ae-4bf5-989b-6c9dd5bc1b1c/deploy-status)](https://app.netlify.com/sites/beautiful-scone-034d86/deploys)
 
 # UOC Boilerplate
 
@@ -9,7 +8,7 @@ This is the 3.x version of UOC Boilerplate, available since the UOC 2020-2 semes
 
 ## Requirements
 
-[Node.js](http://nodejs.org/) >= 18.x
+[Node.js](http://nodejs.org/) >= 25.x
 
 ## Getting started
 
